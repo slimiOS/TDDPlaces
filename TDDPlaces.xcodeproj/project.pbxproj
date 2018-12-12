@@ -34,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		552D070F21C0E43000B71E74 /* buildVersionIncrementer.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = buildVersionIncrementer.sh; sourceTree = "<group>"; };
 		55DB701E21C08FBD00964BEC /* TDDPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TDDPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55DB702121C08FBD00964BEC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		55DB702321C08FBD00964BEC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,9 +76,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		552D070E21C0E41400B71E74 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				552D070F21C0E43000B71E74 /* buildVersionIncrementer.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
 		55DB701521C08FBD00964BEC = {
 			isa = PBXGroup;
 			children = (
+				552D070E21C0E41400B71E74 /* Scripts */,
 				55DB702021C08FBD00964BEC /* TDDPlaces */,
 				55DB703521C08FBF00964BEC /* TDDPlacesTests */,
 				55DB704021C08FBF00964BEC /* TDDPlacesUITests */,
@@ -145,6 +155,7 @@
 				55DB701A21C08FBD00964BEC /* Sources */,
 				55DB701B21C08FBD00964BEC /* Frameworks */,
 				55DB701C21C08FBD00964BEC /* Resources */,
+				552D071021C0E4C000B71E74 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -268,6 +279,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		552D071021C0E4C000B71E74 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nbuildNumber=$(git rev-list --count HEAD)\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$PRODUCT_SETTINGS_PATH\"\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		55DB701A21C08FBD00964BEC /* Sources */ = {
