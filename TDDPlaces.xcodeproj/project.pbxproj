@@ -14,6 +14,11 @@
 		55DB702C21C08FBF00964BEC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55DB702A21C08FBF00964BEC /* LaunchScreen.storyboard */; };
 		55DB703721C08FBF00964BEC /* TDDPlacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB703621C08FBF00964BEC /* TDDPlacesTests.swift */; };
 		55DB704221C08FBF00964BEC /* TDDPlacesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55DB704121C08FBF00964BEC /* TDDPlacesUITests.swift */; };
+		55F1C4CD21C0F83E00864E7A /* Place.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4CB21C0F83E00864E7A /* Place.swift */; };
+		55F1C4CE21C0F83E00864E7A /* PlaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4CC21C0F83E00864E7A /* PlaceCell.swift */; };
+		55F1C4D121C0F89400864E7A /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4D021C0F89400864E7A /* PlaceListViewModel.swift */; };
+		55F1C4D421C0FBF800864E7A /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4D321C0FBF800864E7A /* PlaceTests.swift */; };
+		55F1C4D621C0FC3C00864E7A /* PlacesList.json in Resources */ = {isa = PBXBuildFile; fileRef = 55F1C4D521C0FC3C00864E7A /* PlacesList.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		55DB704121C08FBF00964BEC /* TDDPlacesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDDPlacesUITests.swift; sourceTree = "<group>"; };
 		55DB704321C08FBF00964BEC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55DB704F21C09E5100964BEC /* TDDPlaces.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TDDPlaces.entitlements; sourceTree = "<group>"; };
+		55F1C4CB21C0F83E00864E7A /* Place.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Place.swift; sourceTree = "<group>"; };
+		55F1C4CC21C0F83E00864E7A /* PlaceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceCell.swift; sourceTree = "<group>"; };
+		55F1C4D021C0F89400864E7A /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
+		55F1C4D321C0FBF800864E7A /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
+		55F1C4D521C0FC3C00864E7A /* PlacesList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlacesList.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +119,12 @@
 		55DB702021C08FBD00964BEC /* TDDPlaces */ = {
 			isa = PBXGroup;
 			children = (
-				55DB704F21C09E5100964BEC /* TDDPlaces.entitlements */,
-				55DB702121C08FBD00964BEC /* AppDelegate.swift */,
-				55DB702321C08FBD00964BEC /* ViewController.swift */,
+				55F1C4D721C0FC4400864E7A /* Assets */,
+				55F1C4C521C0F77B00864E7A /* App */,
+				55F1C4CA21C0F83E00864E7A /* Model */,
+				55F1C4D221C0F8A300864E7A /* ViewModel */,
+				55F1C4CF21C0F86800864E7A /* View */,
 				55DB702521C08FBD00964BEC /* Main.storyboard */,
-				55DB702821C08FBF00964BEC /* Assets.xcassets */,
 				55DB702A21C08FBF00964BEC /* LaunchScreen.storyboard */,
 				55DB702D21C08FBF00964BEC /* Info.plist */,
 			);
@@ -124,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				55DB703621C08FBF00964BEC /* TDDPlacesTests.swift */,
+				55F1C4D321C0FBF800864E7A /* PlaceTests.swift */,
 				55DB703821C08FBF00964BEC /* Info.plist */,
 			);
 			path = TDDPlacesTests;
@@ -143,6 +155,49 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		55F1C4C521C0F77B00864E7A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				55DB704F21C09E5100964BEC /* TDDPlaces.entitlements */,
+				55DB702121C08FBD00964BEC /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		55F1C4CA21C0F83E00864E7A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55F1C4CB21C0F83E00864E7A /* Place.swift */,
+				55F1C4CC21C0F83E00864E7A /* PlaceCell.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55F1C4CF21C0F86800864E7A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				55DB702321C08FBD00964BEC /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		55F1C4D221C0F8A300864E7A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55F1C4D021C0F89400864E7A /* PlaceListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55F1C4D721C0FC4400864E7A /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				55DB702821C08FBF00964BEC /* Assets.xcassets */,
+				55F1C4D521C0FC3C00864E7A /* PlacesList.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +316,7 @@
 				55DB702C21C08FBF00964BEC /* LaunchScreen.storyboard in Resources */,
 				55DB702921C08FBF00964BEC /* Assets.xcassets in Resources */,
 				55DB702721C08FBD00964BEC /* Main.storyboard in Resources */,
+				55F1C4D621C0FC3C00864E7A /* PlacesList.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,8 +361,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F1C4CD21C0F83E00864E7A /* Place.swift in Sources */,
 				55DB702421C08FBD00964BEC /* ViewController.swift in Sources */,
 				55DB702221C08FBD00964BEC /* AppDelegate.swift in Sources */,
+				55F1C4D121C0F89400864E7A /* PlaceListViewModel.swift in Sources */,
+				55F1C4CE21C0F83E00864E7A /* PlaceCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				55DB703721C08FBF00964BEC /* TDDPlacesTests.swift in Sources */,
+				55F1C4D421C0FBF800864E7A /* PlaceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
