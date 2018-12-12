@@ -19,6 +19,8 @@
 		55F1C4D121C0F89400864E7A /* PlaceListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4D021C0F89400864E7A /* PlaceListViewModel.swift */; };
 		55F1C4D421C0FBF800864E7A /* PlaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4D321C0FBF800864E7A /* PlaceTests.swift */; };
 		55F1C4D621C0FC3C00864E7A /* PlacesList.json in Resources */ = {isa = PBXBuildFile; fileRef = 55F1C4D521C0FC3C00864E7A /* PlacesList.json */; };
+		55F1C4DD21C0FD7800864E7A /* PlaceListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4DB21C0FD7800864E7A /* PlaceListController.swift */; };
+		55F1C4DE21C0FD7800864E7A /* PlaceTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55F1C4DC21C0FD7800864E7A /* PlaceTableCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +61,8 @@
 		55F1C4D021C0F89400864E7A /* PlaceListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListViewModel.swift; sourceTree = "<group>"; };
 		55F1C4D321C0FBF800864E7A /* PlaceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceTests.swift; sourceTree = "<group>"; };
 		55F1C4D521C0FC3C00864E7A /* PlacesList.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PlacesList.json; sourceTree = "<group>"; };
+		55F1C4DB21C0FD7800864E7A /* PlaceListController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListController.swift; sourceTree = "<group>"; };
+		55F1C4DC21C0FD7800864E7A /* PlaceTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceTableCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +182,8 @@
 		55F1C4CF21C0F86800864E7A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				55F1C4DB21C0FD7800864E7A /* PlaceListController.swift */,
+				55F1C4DC21C0FD7800864E7A /* PlaceTableCell.swift */,
 				55DB702321C08FBD00964BEC /* ViewController.swift */,
 			);
 			path = View;
@@ -364,8 +370,10 @@
 				55F1C4CD21C0F83E00864E7A /* Place.swift in Sources */,
 				55DB702421C08FBD00964BEC /* ViewController.swift in Sources */,
 				55DB702221C08FBD00964BEC /* AppDelegate.swift in Sources */,
+				55F1C4DE21C0FD7800864E7A /* PlaceTableCell.swift in Sources */,
 				55F1C4D121C0F89400864E7A /* PlaceListViewModel.swift in Sources */,
 				55F1C4CE21C0F83E00864E7A /* PlaceCell.swift in Sources */,
+				55F1C4DD21C0FD7800864E7A /* PlaceListController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
