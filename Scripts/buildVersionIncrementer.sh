@@ -16,3 +16,4 @@ fi
 
 #buildNumber=$(git rev-list --count HEAD)
 #/usr/libexec/PlistBuddy -c "Set :CFBundleVersion $buildNumber" "$PRODUCT_SETTINGS_PATH"
+# Use Build run script phase in project rather than bot. Xcode Server pre-integration hook in Xcode 10 no longer has access to the same environment variables and build resources? Changes in build steps.

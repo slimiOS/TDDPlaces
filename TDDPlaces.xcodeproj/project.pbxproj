@@ -87,12 +87,12 @@
 		55DB701521C08FBD00964BEC = {
 			isa = PBXGroup;
 			children = (
+				55DB705021C09E5400964BEC /* Frameworks */,
+				55DB701F21C08FBD00964BEC /* Products */,
 				552D070E21C0E41400B71E74 /* Scripts */,
 				55DB702021C08FBD00964BEC /* TDDPlaces */,
 				55DB703521C08FBF00964BEC /* TDDPlacesTests */,
 				55DB704021C08FBF00964BEC /* TDDPlacesUITests */,
-				55DB701F21C08FBD00964BEC /* Products */,
-				55DB705021C09E5400964BEC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
